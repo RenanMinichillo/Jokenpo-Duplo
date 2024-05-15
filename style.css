@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-loading {
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px;
+}
+
+.img-loading {
+    max-width: 100%;
+}
+
+.container-home {
+    text-align: center;
+    position: relative;
+    top: 25%;
+}
+
+.content-home {
+    padding: 20px;
+}
+
+.content-home label {
+    display: block;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px;
+}
+
+#username-home {
+    display: block;
+    font-size: 0.7em;
+    margin: 10px auto;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-home button img {
+    width: 150px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20%;
+}
+
+.normal-game {
+    background-color: rgba(0, 0, 255, 0.2);
+    box-shadow: 0px 0px 5px #000;
+    border: 1px solid #00F;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.menu button {
+    background-color: #00F;
+    box-shadow: 0 2px 5px #000;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    font-size: 1em;
+    box-shadow: 0 3px 5px #000;
+}
+
+.box-result {
+    margin: 20px 0;
+}
+
+.box-result img {
+    width: 100px;
+}
+
+.box-texts {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-texts p {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.box-images {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.box-scoreboard {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.box-scoreboard div p {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.box-scoreboard div span {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #FFF;
+    text-shadow: 0 2px 2px #000;
+}
+
+.box-options {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-normal {
+    background-color: #EEE;
+    box-shadow: 0 2px 3px #000;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#btn-rock:hover {
+    background-color: #e5e5e5;
+    box-shadow: 0 2px 3px rgb(238, 0, 255);
+}
+
+#btn-paper:hover {
+    background-color: #e5e5e5;
+    box-shadow: 0 2px 3px rgb(0, 255, 4);
+}
+
+#btn-scissors:hover {
+    background-color: #e5e5e5;
+    box-shadow: 0 2px 3px rgb(8, 0, 255);
+}
+
+#btn-rock:active {
+    background-color: #c1c1c1;
+    box-shadow: 0 2px 3px rgb(238, 0, 255);
+    transition: 0.3s;
+}
+
+#btn-paper:active {
+    background-color: #c1c1c1;
+    box-shadow: 0 2px 3px rgb(0, 255, 4);
+    transition: 0.3s;
+}
+
+#btn-scissors:active {
+    background-color: #c1c1c1;
+    box-shadow: 0 2px 3px rgb(8, 0, 255);
+    transition: 0.3s;
+}
+
+.btn-normal img {
+    width: 120px;
+}
+
+.bigbang-game {
+    background-color: rgba(0, 0, 255, 0.2);
+    box-shadow: 0px 0px 5px #000;
+    border: 1px solid #00F;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.box-result-bigbang {
+    margin: 20px 0;
+}
+
+.box-result-bigbang .box-texts {
+    justify-content: space-evenly;
+}
+
+.box-result-bigbang img {
+    width: 90px;
+    border-radius: 20px;
+}
+
+.box-scoreboard-bbt {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-scoreboard-bbt div p {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.box-scoreboard-bbt div span {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #FFF;
+    text-shadow: 0 2px 2px #000;
+}
+
+.box-options-bigbang {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.box-options-bigbang button {
+    background-color: #EEE;
+    box-shadow: 0 2px 3px #000;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.box-options-bigbang img {
+    width: 70px;
+}
+
+#btn-rock-bigbang {
+    background-color: #aeaeae;
+}
+
+#btn-paper-bigbang {
+    background-color: #FF0;
+}
+
+#btn-scissors-bigbang {
+    background-color: #F00;
+}
+
+#btn-lizard-bigbang {
+    background-color: #0F0;
+}
+
+#btn-spock-bigbang {
+    background-color: #DEB79D;
+}
+
+@media screen and (min-width: 480px) {
+
+    .container-loading {
+        position: relative;
+        top: 25%;
+    }
+
+    .img-loading {
+        max-width: 90%;
+    }
+
+    section {
+        position: relative;
+        top: 25%;
+    }
+
+    .box-result img {
+        width: 80px;
+    }
+
+    .btn-normal img {
+        width: 90px;
+    }
+
+   .box-result-bigbang img {
+        width: 70px;
+    }
+
+    .box-options-bigbang img {
+        width: 50px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 320px) {
+ 
+    .title-loading {
+        font-size: 2.5rem;
+    }
+
+    .img-loading {
+        max-width: 80%;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 25%;
+    }
+
+    .box-result img {
+        width: 70px;
+    }
+
+    .box-texts {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .box-scoreboard div p {
+        font-size: 1.2em;
+    }
+
+    .box-scoreboard div span {
+        font-size: 1em;
+    }
+
+    .btn-normal img {
+        width: 70px;
+    }
+
+    .bigbang-game {
+        max-width: 90%;
+    }
+
+    .box-result-bigbang img {
+        width: 70px;
+    }
+
+    .box-scoreboard-bbt {
+        margin: 20px 0;
+    }
+
+    .box-options-bigbang img {
+        width: 50px;
+        max-width: 100%;
+    }
+}
+
+.hidden {
+    display: none;
+}

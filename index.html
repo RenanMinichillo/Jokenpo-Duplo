@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Jokenpo</title>
+</head>
+
+<body>
+    <main>
+        <div class="container-loading hidden">
+            <h1 class="title-loading">Seja Bem-vindo!</h1>
+            <img class="img-loading" src="./assets/img/loading.gif" alt="Imagem de Jokenpô">
+        </div>
+
+        <div class="container-home hidden">
+            <div class="content-home">
+                <label>Nome do Jogador
+                    <input id="username-home" type="text" placeholder="Digite o seu nome" maxlength="12">
+                </label>
+
+                <div class="btn-home">
+                    <button id="btn-jokenpo">
+                        <img class="img-jokenpo" src="./assets/img/jokenpo.png" alt="Imagem Jokenpô Normal">
+                    </button>
+
+                    <button id="btn-jokenpo-bigbang">
+                        <img class="img-jokenpo-bigbang" src="./assets/img/jokenpo-bigbang.png"
+                            alt="Imagem Jokenpô Sheldon">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <section class="hidden2">
+            <div class="normal-game hidden">
+                <div class="menu">
+                    <span>Voltar <button type="button" class="back" onclick="back()">❌</button></span>
+                    <span>Reset <button type="button" class="reset" onclick="resetScoreboard()">🔄</button></span>
+                </div>
+
+                <div class="box-result">
+                    <div class="box-texts">
+                        <p id="n-username">Você</p>
+
+                        <p>Resultado</p>
+
+                        <p>Oponente</p>
+                    </div>
+
+                    <div class="box-images">
+                        <img id="img-n-you" src="./assets/img/rock.png" alt="Imagem da Escolha do Jogador">
+
+                        <img id="img-n-result" src="./assets/img/wait.png" alt="Imagem do Resultado">
+
+                        <img id="img-n-opponent" src="./assets/img/scissors.png" alt="Imagem da Escolha do Oponente">
+                    </div>
+                </div>
+
+                <div class="box-scoreboard">
+                    <div>
+                        <p>Ganhou</p>
+                        <span id="player-point">0</span>
+                    </div>
+
+                    <div>
+                        <p>Rodada</p>
+                        <span id="turn-now">1</span>
+                    </div>
+
+                    <div>
+                        <p>Perdeu</p>
+                        <span id="opponent-point">0</span>
+                    </div>
+                </div>
+
+                <div class="box-options">
+                    <button id="btn-rock" class="btn-normal" onclick="playerNormal('rock')">
+                        <img src="./assets/img/rock.png" alt="Imagem Sinal de Pedra">
+                    </button>
+
+                    <button id="btn-paper" class="btn-normal" name="paper" onclick="playerNormal('paper')">
+                        <img src="./assets/img/paper.png" alt="Imagem Sinal de Papel">
+                    </button>
+
+                    <button id="btn-scissors" class="btn-normal" name="scissors" onclick="playerNormal('scissors')">
+                        <img src="./assets/img/scissors.png" alt="Imagem Sinal de Tesoura">
+                    </button>
+                </div>
+            </div>
+
+            <div class="bigbang-game hidden2">
+                <div class="menu">
+                    <span>Voltar <button type="button" class="back" onclick="back()">❌</button></span>
+                    <span>Reset <button type="button" class="reset" onclick="resetScoreboard()">🔄</button></span>
+                </div>
+
+                <div class="box-result-bigbang">
+                        <div class="box-texts">
+                            <p id="bbt-username">Você</p>
+
+                            <p>Resultado</p>
+
+                            <p>Oponente</p>
+                        </div>
+
+                        <div class="box-images">
+                            <img id="img-bbt-you" src="./assets/img/rock-bbt.png" alt="Imagem da Escolha do Jogador">
+
+                            <img id="img-bbt-result" src="./assets/img/wait.png" alt="Imagem do Resultado">
+
+                            <img id="img-bbt-opponent" src="./assets/img/scissors-bbt.png"
+                                alt="Imagem da Escolha do Oponente">
+                        </div>
+                </div>
+
+                <div class="box-scoreboard-bbt">
+                    <div>
+                        <p>Ganhou</p>
+                        <span id="player-bbt-point">0</span>
+                    </div>
+
+                    <div>
+                        <p>Rodada</p>
+                        <span id="turn-bbt-now">1</span>
+                    </div>
+
+                    <div>
+                        <p>Perdeu</p>
+                        <span id="opponent-bbt-point">0</span>
+                    </div>
+                </div>
+
+                <div class="box-options-bigbang">
+                    <button id="btn-rock-bigbang" onclick="playerBigBang('rock-bbt')">
+                        <img src="./assets/img/rock-bbt.png" alt="Imagem Sinal de Pedra">
+                    </button>
+
+                    <button id="btn-paper-bigbang" onclick="playerBigBang('paper-bbt')">
+                        <img src="./assets/img/paper-bbt.png" alt="Imagem Sinal de Papel">
+                    </button>
+
+                    <button id="btn-scissors-bigbang" onclick="playerBigBang('scissors-bbt')">
+                        <img src="./assets/img/scissors-bbt.png" alt="Imagme Sinal de Tesoura">
+                    </button>
+
+                    <button id="btn-lizard-bigbang" onclick="playerBigBang('lizard-bbt')">
+                        <img src="./assets/img/lizard-bbt.png" alt="Imagme Sinal de Lagarto">
+                    </button>
+
+                    <button id="btn-spock-bigbang" onclick="playerBigBang('spock-bbt')">
+                        <img src="./assets/img/spock-bbt.png" alt="Imagme Sinal de Spock">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<!-- <script src="./script.js"></script> -->
+
+</html>
