@@ -274,7 +274,7 @@ section {
     background-color: #DEB79D;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
 
     .container-loading {
         position: relative;
@@ -283,6 +283,10 @@ section {
 
     .img-loading {
         max-width: 90%;
+    }
+
+    .btn-home button img {
+        width: 130px;
     }
 
     section {
@@ -308,14 +312,19 @@ section {
     }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
  
     .title-loading {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .img-loading {
         max-width: 80%;
+    }
+
+    .content-home label {
+        font-size: 1.5rem;
+        margin: 1rem;
     }
 
     section {
