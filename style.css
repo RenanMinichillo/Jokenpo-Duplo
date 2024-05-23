@@ -312,7 +312,7 @@ section {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 395px) {
  
     .title-loading {
         font-size: 2.2rem;
