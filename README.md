@@ -22,20 +22,20 @@ Este é um projeto de jogo simples desenvolvido em HTML, CSS e JavaScript. Ele o
 
 ### Tela de Carregamento
 <div align="center">
-  <img src="https://github.com/RenanMinichillo/schedule/blob/main/DevClub/Front-End/JAVASCRIPT/M%C3%B3dulo%204/Sheldon%20Jokenp%C3%B4/assets/project/load.png?raw=true" alt="imagem jokenpo clássico - pc">
+  <img src="https://github.com/RenanMinichillo/jokenpo-duplo/blob/main/assets/project/load.png?raw=true" alt="imagem jokenpo clássico - pc">
 </div>
 
 ### Tela de Escolha
 <div align="center">
-  <img src="https://github.com/RenanMinichillo/schedule/blob/main/DevClub/Front-End/JAVASCRIPT/M%C3%B3dulo%204/Sheldon%20Jokenp%C3%B4/assets/project/choose.png?raw=true" alt="imagem jokenpo bigbang theory - pc">
+  <img src="https://github.com/RenanMinichillo/jokenpo-duplo/blob/main/assets/project/choose.png?raw=true" alt="imagem jokenpo bigbang theory - pc">
 </div>
 
 ### Jokenpô Clássico
 <div align="center">
-  <img src="https://github.com/RenanMinichillo/schedule/blob/main/DevClub/Front-End/JAVASCRIPT/M%C3%B3dulo%204/Sheldon%20Jokenp%C3%B4/assets/project/classic.png?raw=true" alt="imagem jokenpo clássico - celular" style="margin: 0 10px;">
+  <img src="https://github.com/RenanMinichillo/jokenpo-duplo/blob/main/assets/project/classic.png?raw=true" alt="imagem jokenpo clássico - celular" style="margin: 0 10px;">
 </div>
 
 ### Jokenpô Big Bang Theory
 <div align="center">
-  <img src="https://github.com/RenanMinichillo/schedule/blob/main/DevClub/Front-End/JAVASCRIPT/M%C3%B3dulo%204/Sheldon%20Jokenp%C3%B4/assets/project/bigbang.png?raw=true" alt="imagem jokenpo bigbang theory - celular" style="margin: 0 10px;">
+  <img src="https://github.com/RenanMinichillo/jokenpo-duplo/blob/main/assets/project/bigbang.png?raw=true" alt="imagem jokenpo bigbang theory - celular" style="margin: 0 10px;">
 </div>
